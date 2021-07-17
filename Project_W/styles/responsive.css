@@ -1,0 +1,42 @@
+@media screen and (max-width:1000px) {
+  .section3 .dress_wrap .dress p {width:30%;}
+  .section3 .dress_wrap .dress p:nth-child(4) {display:none;}
+  .section4 div > div {flex-flow:column; align-items:center;}
+  .section4 div > div p {width:90%;}
+  .section4 div > div p:nth-child(3) {display:none;}
+  .section4 div > div p:nth-child(4) {display:none;}
+  .section4 div > div p:after {position:absolute;}
+  .section5 .left {width:55%;}
+  .section5 .center {display:none;}
+  .section5 .right {width:40%;}
+  .section6 .sns p {width:32%;}
+  .section6 .sns p:nth-child(4) {display:none}
+}
+
+@media screen and (max-width:800px) {
+  .section3 .dress_wrap .dress p:nth-child(3) {display:none;}
+  .section3 .dress_wrap .dress p {width:48%;}
+  .section6 .sns p {width:48%;}
+  .section6 .sns p:nth-child(3) {display:none}
+  
+  footer .top > div:nth-child(1),
+  footer .top > div:nth-child(2),
+  footer .top > div:nth-child(3),
+  footer .top > div:nth-child(4) {width:45%; margin-bottom:50px;}
+}
+
+@media screen and (max-width:600px) {
+  .section3 .dress_wrap .dress p {margin:0 auto; width:80%;}
+  .section3 .dress_wrap .dress p:nth-child(2) {display:none;}
+  .section4 {flex-flow:column;}
+  .section4 div {width:100%;}
+  .section4 div:last-child > h2 {padding-top:100px;}
+  .section4 div > div p:nth-child(2) {display:none;}
+  .section6 .sns p {width:80%; margin:0 auto;}
+  .section6 .sns p:nth-child(2) {display:none}
+
+  footer .top > div:nth-child(1),
+  footer .top > div:nth-child(2),
+  footer .top > div:nth-child(3),
+  footer .top > div:nth-child(4) {width:90%;}
+}

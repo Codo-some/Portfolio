@@ -1,0 +1,120 @@
+/* font */
+
+body {font-family: 'Mate SC', serif;}
+
+/* nav_btn */
+
+.nav_btn {position:fixed; left:40px; top:40px; padding:10px; z-index:999;}
+.nav_btn1 {}
+.nav_btn2 {display:none;}
+.home_btn {position:fixed; left:100px; top:45px; padding:5px 10px; border:1px solid #333; z-index:999;}
+
+/* side_wrap */
+
+.side_wrap {position:fixed; top:0; height:100vh; width:100%; z-index:998; font-size:1.5em; display:flex; justify-content:space-between; display:none; opacity:0; transition:.5s;}
+.side_wrap .left {width:300px; height:100%; background-color:#fff; padding:150px 0 0 50px;  position:absolute; left:0; top:0;}
+.side_wrap .right {width:calc(100% - 300px); height:100%; background-color:#00000080; position:absolute; right:0; top:0;}
+.side_wrap .top {height:45%;}
+.side_wrap .top p {font-size:1.5em; margin-bottom:20px;}
+.side_wrap .top a {display:block; padding:10px 0;}
+.side_wrap .top a:after {content:''; display:block; width:0; height:2px; background-color:#000; position:relative; top:10px; transition:.5s;}
+.side_wrap .top a:hover:after {width:150px}
+.side_wrap .btm {height:45%;}
+.side_wrap .btm p {font-size:1.5em; margin-bottom:20px;}
+.side_wrap .btm a {display:block; padding:10px 0;}
+.side_wrap .btm a:after {content:''; display:block; width:0; height:2px; background-color:#000; position:relative; top:10px; transition:.5s;}
+.side_wrap .btm a:hover:after {width:100px}
+
+/* section */
+
+.section1 {height:100vh; display:flex; align-items:center;}
+.section1 .left {text-align:center; width:200px;}
+.section1 .left h1 {}
+.section1 .left h1 img {transform:rotate(-90deg); width:100%;}
+.section1 .right {width:calc(100% - 200px); height:100%; background-image:url(../images/clouds-1282314_1920.jpg); background-size:cover; background-attachment:fixed; position:relative;}
+.section1 .right p {font-size:2.0em; line-height:1.5; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+
+.section2 {height:80vh; width:90%; margin:100px auto; background-image:url(../images/work_blur.png); background-size:cover; background-attachment:fixed; position:relative;}
+.section2 p {font-size:2.0em; position: absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align:center; line-height:1.5;}
+
+.section3 {}
+.section3 h2 {text-align:center; font-size:2.0em; padding-bottom:100px;}
+.section3 .dress_wrap {width:90%; margin:0 auto; overflow:hidden;}
+.section3 .dress_wrap .dress {width:100%; display:flex; flex-flow:row nowrap; justify-content:space-between; position:relative; padding-bottom:100px;}
+.section3 .dress_wrap .dress p {width:23%; border:1px solid #ccc; border-radius:30px; transition:.5s; position:relative;}
+.section3 .dress_wrap .dress p:after {content:''; display:block; width:100%; height:100%; background-color:#00000080; opacity:0; position:absolute; left:0; top:0; border-radius:30px; transition:.5s;}
+.section3 .dress_wrap .dress p:hover {border-radius:0;}
+.section3 .dress_wrap .dress p:hover:after {border-radius:0; opacity:1;}
+.section3 .dress_wrap .dress p img {width:100%;}
+.section3 .dress_wrap .dress p a {position:absolute; top:50%; transform:translate(-50%,-50%); opacity:0; z-index:1; font-size:2.0em; color:#ffffff80; transition:.5s;}
+.section3 .dress_wrap .dress p:hover a {opacity:1;}
+.section3 .dress_wrap .dress p .comment {left:40%;}
+.section3 .dress_wrap .dress p .heart {left:60%;}
+.section3 .dress_wrap .dress p a i {transition:.5s;}
+.section3 .dress_wrap .dress p a i:hover {color:#fff;}
+.section3 .info {height:200px; background-image:url(../images/concrete-1646788_1920.jpg); background-size:cover; background-attachment:fixed; position:relative;}
+.section3 .info a {font-size:2.0em; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); padding:10px 20px; border:1px solid #000;}
+
+.section4 {margin:100px auto; display:flex;}
+.section4 div {width:50%;}
+.section4 div > h2 {text-align:center; font-size:2.0em; padding-bottom:100px;}
+.section4 div > div {display:flex; flex-flow:row wrap; justify-content:space-evenly; width:80%; margin:0 auto;}
+.section4 div > div p {width:45%; border:1px solid #ccc; margin-bottom:20px; border-radius:30px; transition:.5s; position:relative;}
+.section4 div > div p:after {content:''; display:block; width:100%; height:100%; background-color:#00000080; opacity:0; transform:translateY(-100%); border-radius:30px; transition:.5s;}
+.section4 div > div p:hover:after {border-radius:0; opacity:1;}
+.section4 div > div p:hover {border-radius:0;}
+.section4 div > div p img {width:100%; background-color:#fff;}
+.section4 div > div p a {position:absolute; top:50%; transform:translate(-50%,-50%); opacity:0; z-index:1; font-size:2.0em; color:#ffffff80; transition:.5s;}
+.section4 div > div p:hover a {opacity:1;}
+.section4 div > div p .comment {left:40%;}
+.section4 div > div p .heart {left:60%;}
+.section4 div > div p a i {transition:.5s;}
+.section4 div > div p a i:hover {color:#fff;}
+
+.section5 {width:90%; height:90vh; margin:0 auto; display:flex; justify-content:space-between;}
+.section5 > div {transition:1s;}
+.section5 .left {width:40%; height:90%; background-image:url(../images/story1.jpeg); background-size:cover; background-position:right;}
+.section5 .center {width:25%; display:flex; flex-flow:column; justify-content:space-between;}
+.section5 .center .top {height:60%; width:50%; background-color:#333;}
+.section5 .center .top p {writing-mode: vertical-rl; transform:rotate(180deg); font-size:3.0em; line-height:1.2; color:#fff; height:100%; width:100%; text-align:center;}
+.section5 .center .btm {height:35%; background-image:url(../images/story2.jpeg); background-size:cover;}
+.section5 .right {width:30%; display:flex; flex-flow:column; justify-content:space-between;}
+.section5 .right .top {height:60%; background-image:url(../images/story3.jpeg); background-size:cover;}
+.section5 .right .btm {height:40%; text-align:center; position:relative;}
+.section5 .right .btm .btm_position {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:100%;}
+.section5 .right .btm .btm_position p {font-size:2.0em; margin-bottom:30px;}
+.section5 .right .btm .btm_position a {padding:10px 20px; border:1px solid #000; display:inline-block; transition:.5s;}
+
+.section6 {margin:150px auto 100px;}
+.section6 h2 {text-align:center; font-size:2.0em;}
+.section6 .title {display:flex; justify-content:center; align-items:center; margin:50px 0;}
+.section6 .title img {width:40px; height:40px; border-radius:50%; border:1px solid #333; margin-right:10px;}
+.section6 .title span {font-size:1.5em;}
+.section6 .sns {width:90%; margin:0 auto; display:flex; justify-content:space-between;}
+.section6 .sns p {width:23%; position:relative; border-radius:50%; overflow:hidden; transition:.5s;}
+.section6 .sns p:after {content:''; display:block; position:absolute; width:100%; height:100%; opacity:0; transition:.5s; background-color:#00000030; left:50%; top:50%; transform:translate(-50%,-50%); z-index:900;}
+.section6 .sns p:hover:after {opacity:1;}
+.section6 .sns p img {width:100%; height:100%;}
+.section6 .sns p a {position:relative; z-index:999; opacity:0; color:#ffffff80; font-size:2.0em; transition:.5s;}
+.section6 .sns p:hover a {opacity:1;}
+.section6 .sns p a i {transition:.5s;}
+.section6 .sns p a:hover i {color:#fff;}
+.section6 .sns p .comment {position:absolute; left:40%; top:50%; transform:translate(-50%,-50%);}
+.section6 .sns p .heart {position:absolute; left:60%; top:50%; transform:translate(-50%,-50%);}
+
+/* footer */
+
+footer {padding:30px 0; border-top:1px solid #ccc; text-align: center;}
+footer .top {display:flex; width:90%; margin:0 auto; flex-flow:row wrap; justify-content:space-between;}
+footer .top > div:nth-child(1) {width:20%;}
+footer .top > div:nth-child(2) {width:20%;}
+footer .top > div:nth-child(3) {width:20%;}
+footer .top > div:nth-child(4) {width:35%;}
+footer .top > div h2 {margin-bottom:10px;}
+footer .top > div p {line-height:1.5; font-family: 'Noto Sans KR', sans-serif; font-size:.8em;}
+footer .top > div p i {margin-right:10px;}
+footer .top > div p span {font-weight:bold;}
+footer .top > div a {display:inline-block; padding:10px 20px; border:1px solid #ccc; font-size:.8em; border-radius:5px; margin-top:10px; font-family: 'Noto Sans KR', sans-serif;}
+footer .top .call {}
+footer .top .bank {}
+footer .top .order {}

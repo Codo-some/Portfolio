@@ -1,0 +1,66 @@
+@media screen and (max-width:1650px) {
+  .wrap .con2 .about_wrap .text {left:30px; top:170px; height:15%;}
+  .wrap .con2 .about_wrap .text p:nth-child(2) {display:none;}
+  .wrap .con2 .about_wrap .certi {width:50%;}
+  .wrap .con2 .about_wrap .study {width:50%;}
+}
+@media screen and (max-width:1400px) {
+  
+} 
+@media screen and (max-width:1350px) {
+  .wrap .con2 .about_wrap .study {width:40%;}
+  .wrap .con2 .about_wrap .study h2 {margin-bottom:0;}
+  .wrap .con2 .about_wrap .study .skill {flex-flow:column;}
+  .wrap .con2 .about_wrap .study .skill p {width:auto; margin-bottom:10px;}
+  .wrap .con2 .about_wrap .study .skill p:last-child {margin:0;}
+}
+@media screen and (max-width:1200px) {
+  .pagination {font-size:5em; left:40px;}
+  .light {left:20px; bottom:20px; width:80px; height:25px;}
+  .light span {width:17px; height:17px;}
+  .wrap .con2 .about_wrap .certi {width:35%;}
+}
+@media screen and (max-width:1100px) {
+  .wrap .con2 .about_wrap .study {width:30%;}
+}
+@media screen and (max-width:950px) {
+  .wrap .con1 .border_wrap {width:75%;}
+  .wrap .con2 .about_wrap {top:47%;}
+  .wrap .con3 .portfolio_wrap {top:47%;}
+  .logo {left:-100px; top:-100px;}
+  .right_nav {right:-300px;}
+  .pagination {right:20px; bottom:20px; top:unset; left:unset; width:auto; transform:unset; font-size:1.5em;}
+  .wrap .con2 .about_wrap {width:90%;}
+  .wrap .con3 .portfolio_wrap {width:90%;}
+  .wrap .con3 .portfolio_wrap .pf_all .pf .link .btm {display:flex; flex-flow:column; align-items:center;}
+  .wrap .con3 .portfolio_wrap .pf_all .pf .link .btm a {margin-bottom:10px;}
+  .wrap .con3 .portfolio_wrap .pf_all .pf .link .btm a:last-child {margin-bottom:0;}
+} 
+@media screen and (max-width:700px) {
+  .wrap .con1 .border_wrap h1 {font-size:2.0em;}
+  .wrap .con2 .about_wrap > div {height:25% !important; width:100% !important; background-color:transparent; position:unset; border:0; border-bottom:1px solid coral;}
+  .wrap .con2 .about_wrap .text {display:none;}
+  .wrap .con2 .about_wrap .certi .all {flex-flow:row wrap;}
+  .wrap .con2 .about_wrap .certi .all p {width:30%;}
+  .wrap .con2 .about_wrap .ability .skill {flex-flow:row nowrap;}
+  .wrap .con2 .about_wrap .ability .skill p:first-child {margin:0;}
+  .wrap .con2 .about_wrap .ability .skill p img {width:60%;}
+  .wrap .con2 .about_wrap .study h2 {margin-bottom:10px;}
+  .wrap .con2 .about_wrap .study .skill {flex-flow:row;}
+  .wrap .con2 .about_wrap .study .skill p {margin:0;}
+  .wrap .con2 .about_wrap .study .skill p img {width:50%;}
+  
+}
+@media screen and (max-width:600px) {
+  .wrap .con2 .about_wrap .certi .all p {width:50%;}
+}
+@media screen and (max-width:500px) {
+  .wrap .con1 .border_wrap h1 {font-size:1.5em;}
+  .wrap .con3 .portfolio_wrap .pf_title {flex-flow:column; border:1px solid coral; position:relative; bottom:30px;}
+  .wrap .con3 .portfolio_wrap .pf_title a {width:100%; padding:7px 0; border:0;}
+}
+@media screen and (max-width:400px) {
+  .wrap .con2 .about_wrap > div {padding:10px;}
+  .wrap .con2 .about_wrap .name p {font-size:0.8em;}
+  .wrap .con2 .about_wrap .certi .all p {font-size:0.75em;}
+}

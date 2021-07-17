@@ -1,0 +1,152 @@
+* {font-family: "main"; color:coral;}
+
+body{-ms-overflow-style:none;} ::-webkit-scrollbar {display:none;}
+
+html {scroll-behavior:smooth;}
+
+a {color:coral;}
+
+.opa_bg {width:100%; height:100%; position:fixed; left:0; top:0; z-index:998; background-color:#333; opacity:0; transition:.4s; display:none;}
+
+/* h1 */
+
+.logo {width:50px; height:50px; position:fixed; left:50px; top:50px; z-index:999; transform:rotateY(0); transition:1s;}
+.logo:hover {transform:rotateY(180deg);}
+.logo a {}
+.logo a img {width:100%;}
+
+/* pagenation */
+
+.pagination {font-size:10.0em; width:150px; position:fixed; left:20px; top:50%; transform:translate(-50%,-50%); z-index:999; color:coral; transition:1s;}
+
+/* right_nav */
+
+.right_nav {width:100px; height:100vh; position:fixed; right:0; top:0; border-left:1px solid coral; transition:1s; z-index:999; display:flex; flex-flow:column; justify-content:center; align-items:center;}
+.right_nav a {padding:60px 30px; font-size:1.5em; writing-mode:vertical-rl; transition:.5s; color:coral;}
+
+/* light */
+
+.light {display:inline-block; width:100px; height:50px; border:1px solid coral; position:fixed; left:50px; bottom:50px; z-index:999; border-radius:300px; transition:1s;}
+.light span {display:inline-block; width:35px; height:35px; background-color:coral; position:absolute; left:7px; top:50%; transform:translateY(-50%); border-radius:50%; transition:1s;}
+
+/* wrap */
+
+.wrap {}
+.wrap .contents {width:100%; height:100vh; position:absolute; text-align:center; transition:background-color 1s;}
+
+/* con1 */
+
+@keyframes rotate {
+  0% {transform:rotate(0);}
+  100% {transform:rotate(360deg);}
+}
+
+@keyframes typing {
+  0% {width:0%;}
+  50% {width:100%;}
+  100% {width:0%;}
+}
+
+.border_wrap h1 {
+  text-transform: capitalize;
+  white-space: nowrap;
+  color: coral;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* //텍스트를 정 가운데에 고정시켜 주려면 이것 필수! */
+}
+.border_wrap h1::before {
+  content: "Gyun's Portfolio";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #c74545;
+  overflow: hidden;
+  animation: typing 3s steps(300) infinite;
+}
+
+
+
+.wrap .con1 {background-color:#fff5f5; position:fixed; top:0;}
+.wrap .con1 .border_wrap {width:50%; height:60%; border:1px solid coral; border-right:0; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); display:flex; justify-content:flex-end; align-items:center; transition:1s;}
+.wrap .con1 .border_wrap .square {width:50px; height:50px; border:1px solid coral; position:absolute; left:-25px; top:-25px; animation:rotate 2s infinite alternate;}
+.wrap .con1 .border_wrap h1 {text-align:right; line-height:1.5; font-size:3.0em; color:coral; transition:.5s;}
+
+/* con2 */
+
+.wrap .con2 {background-color:#fff0f0; top:100vh; font-family: 'Nanum Gothic Coding', monospace;}
+.wrap .con2 .about_wrap {width:70%; height:80%; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); border:1px solid coral; transition:1s;}
+.wrap .con2 .about_wrap > div {background-color:#ffebeb; border:1px solid coral; padding:20px 30px; position:absolute; transition:1s; display:flex; flex-flow:column; justify-content:space-evenly;}
+.wrap .con2 .about_wrap > div h2 {font-size:1.4em; margin-bottom:10px; height:40%; display:flex; justify-content:center; align-items:center;}
+
+.wrap .con2 .about_wrap .name {background-color:transparent; left:0; top:0; border-right:0; border-top:0; border-left:0;}
+.wrap .con2 .about_wrap .name h2 {}
+.wrap .con2 .about_wrap .name p {line-height:1.5; transition:1s;}
+
+.wrap .con2 .about_wrap .text {left:450px; height:40%; top:30px; width:300px;}
+.wrap .con2 .about_wrap .text p {line-height:1.5; text-align:left;}
+.wrap .con2 .about_wrap .text p:nth-child(1) {}
+.wrap .con2 .about_wrap .text p:nth-child(2) {margin:30px 0 10px;}
+
+.wrap .con2 .about_wrap .certi {right:30px; top:30px; width:20%; height:40%;}
+.wrap .con2 .about_wrap .certi h2 {}
+.wrap .con2 .about_wrap .certi .all {display:flex; flex-flow:column wrap; justify-content:space-evenly;}
+.wrap .con2 .about_wrap .certi .all p {line-height:2.0; font-size:.9em; transition:1s;}
+
+.wrap .con2 .about_wrap .ability {left:30px; bottom:30px; height:45%;}
+.wrap .con2 .about_wrap .ability h2 {height:30%;}
+.wrap .con2 .about_wrap .ability .skill {display:flex; flex-flow:row wrap; justify-content:space-between;}
+.wrap .con2 .about_wrap .ability .skill p {width:30%;}
+.wrap .con2 .about_wrap .ability .skill p:first-child {margin-bottom:50px;}
+.wrap .con2 .about_wrap .ability .skill p img {width:50px;}
+
+.wrap .con2 .about_wrap .study {right:30px; bottom:30px; width:50%; height:45%;}
+.wrap .con2 .about_wrap .study h2 {height:30%;}
+.wrap .con2 .about_wrap .study .skill {display:flex; flex-flow:row wrap; justify-content:space-between; width:70%; margin:0 auto;}
+.wrap .con2 .about_wrap .study .skill p {width:33%;}
+.wrap .con2 .about_wrap .study .skill p img {width:50px}
+
+/* con3 */
+
+.wrap .con3 {background-color:#ffe8e8; top:200vh; overflow:hidden;}
+
+.wrap .con3 .pf_popup {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:70%; display:none; height:85%; z-index:999;}
+.wrap .con3 .pf_popup .popup {width:100%; height:100%; border:1px solid coral; overflow:scroll; position:absolute; display:none; opacity:0; transition:1s;}
+.wrap .con3 .pf_popup .popup img {width:100%;}
+.wrap .con3 .pf_popup .popup .close_btn {position:fixed; right:20px; top:20px; display:inline-block; padding:10px 16px; font-size:0.8em; border:1px solid coral; z-index:999;}
+
+.wrap .con3 .portfolio_wrap {width:70%; height:80%; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition:1s;}
+.wrap .con3 .portfolio_wrap .pf_title {width:100%; display:flex; justify-content:space-between;}
+.wrap .con3 .portfolio_wrap .pf_title a {display:inline-block; width:30%; padding:20px 0; border:1px solid coral; transition:.5s;}
+.wrap .con3 .portfolio_wrap .pf_title a:first-child {background-color:coral; color:#fff;}
+
+.wrap .con3 .portfolio_wrap .pf_all {}
+.wrap .con3 .portfolio_wrap .pf_all .pf {width:100%; overflow:hidden; position:absolute; top:100px; transition:.5s;}
+.wrap .con3 .portfolio_wrap .pf_all .pf:nth-child(2) {height:0;}
+.wrap .con3 .portfolio_wrap .pf_all .pf:nth-child(3) {height:0;}
+.wrap .con3 .portfolio_wrap .pf_all .pf p {height:40vh; background-size:cover; background-position:top; margin-bottom:30px; border:1px solid coral; overflow:hidden; position:relative;}
+.wrap .con3 .portfolio_wrap .pf_all .pf:nth-child(1) p {background-image:url(../images/WDressRoom.png)}
+.wrap .con3 .portfolio_wrap .pf_all .pf:nth-child(2) p {background-image:url(../images/Shilla.png)}
+.wrap .con3 .portfolio_wrap .pf_all .pf:nth-child(3) p {background-image:url(../images/AhnLab.png)}
+.wrap .con3 .portfolio_wrap .pf_all .pf p .thumb_bg {width:100%; height:100%; background-color:#333; position:absolute; left:0; top:0; opacity:.2; transition:1s;}
+.wrap .con3 .portfolio_wrap .pf_all .pf .link {border:1px solid coral; padding:40px 0;}
+.wrap .con3 .portfolio_wrap .pf_all .pf .link h2 {font-size:1.5em;  padding-bottom:40px;}
+.wrap .con3 .portfolio_wrap .pf_all .pf .link .btm {}
+.wrap .con3 .portfolio_wrap .pf_all .pf .link .btm a {font-size:.8em; display:inline-block; height:50px; line-height:50px; width:250px; margin:0 10px; border:1px solid coral; transition:.5s;}
+.wrap .con3 .portfolio_wrap .pf_all .pf .link .btm a:hover {background-color:coral; color:#fff;}
+
+
+/* style */
+
+.fixed {position:fixed !important; top:0 !important;}
+.light_ball {left:55px !important;}
+
+@font-face {
+  font-family: "main";
+  src: url("../font/Cafe24SsurroundAir.ttf");
+}

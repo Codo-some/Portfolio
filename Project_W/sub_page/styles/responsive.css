@@ -1,0 +1,22 @@
+@media screen and (max-width:1300px) {
+  .wrap .right .btm .other a {width:30%;}
+  .wrap .right .btm .other a:nth-child(4) {display:none;}
+}
+@media screen and (max-width:1100px) {
+  .wrap .right .btm .other a {width:45%;}
+  .wrap .right .btm .other a:nth-child(3) {display:none;}
+}
+@media screen and (max-width:1100px) {
+  .wrap .left {width:50%;}
+  .wrap .right {width:50%;}
+}
+@media screen and (max-width:800px) {
+  .wrap {flex-flow:column;}
+  .wrap .left {width:100%;}
+  .wrap .right {width:100%;}
+  .wrap .right .btm .other a {width:30%;}
+  .wrap .right .btm .other a:nth-child(3) {display:block;}
+}
+@media screen and (max-width:500px) {
+  .wrap .right .btm .other a {width:45%;}
+  .wrap .right .btm .other a:nth-child(3) {display:none;}
